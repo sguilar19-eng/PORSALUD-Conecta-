@@ -1,0 +1,220 @@
+nav { 
+    display: flex;
+    justify-content: space-between;
+    width: 100;
+}
+/* Estilo para convertir el enlace de WhatsApp en un botón atractivo */
+.nav-btn { 
+    background-color: #00529b; 
+    color: white;
+    padding: 10px 22px;
+    text-decoration: nome;
+    border-radius: 25px;
+    front-weight:bold;
+    display: inline-block;
+    transition:background-color 0.3s ease;
+}
+.nav-btn:hover { 
+    background-color: #003a6e;
+}
+
+h1{
+    font-size: 80px !important;
+    line-height: 1.1 !important;
+    font-weight: bold;
+}
+
+/* Oculta la sección de abajo al cargar la página*/
+#contenido-oculto {
+    display: none;
+    }
+    .card-img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        }
+
+        .card {
+            overflow: hidden;  
+            padding: 0 0 20px 0;
+            }
+        .card h3, .card p {
+            padding: 0 20px;
+            }
+
+            .card h2{
+                font-weight: 800; /* 0 usa "bold" / "black" */
+                 }
+
+                 /* Estilo de la tarjeta */
+                 .card {
+                    padding:0 0 20px 0 !important; /* Quita el espacio arriba para que la foto llegue al borde */
+                    overflow: hidden; /* Recorta la imagen para respetar las esquinas redondeadas */
+                    text-align: center; /* Centra todo el texto dentro de la tarjeta */
+                    display: flex;
+                    flex-direction: column; 
+                    }
+
+                    /* Estilo para que la imagen ocupe todo el ancho sin deformarse */
+                    .card-img {
+                        width: 100%;
+                        height: 180px;
+                        object-fit: cover;
+                        display: block;
+                        border-top-left-radius: inherit; /* Redondea las esquinas superiores */
+                        border-top-right-radius: inherit;
+                        }
+
+                        /* Espacio de los títulos y textos */
+                        .card h3 {
+                            margin-top: 15px;
+                            margin-bottom: 8px;
+                            padding:0 15px;
+                            }
+                            .card p {
+                                padding:0 15px;
+                                margin: 0;
+                                }
+
+                                /* Forzar que las tarjetas permitan que la imagn toque los borde*/
+                                .card{
+                                    padding-top: 0 !important;
+                                    padding-left: 0 !important;
+                                    padding-right:0 !important;
+                                    padding-bottom: 20px !important;
+                                    overflow: hidden:  !important;
+                                    text-align: center !important;
+                                }
+                                /* Forzar que la imagen ocupe todo el ancho de orilla a orilla */
+                                .card-img{
+                                    width: 100% !important;
+                                    max-width: 100% !important;
+                                    height: 180px !important;
+                                    object-fit: cover !important;
+                                    display:block !important;
+                                    margin: 0 !important;
+                                }
+
+                                /* Dar espacio a los textos para que no peguen a los bordes */
+                                .card h3, .card p {
+                                    padding-left: 15px !important;
+                                    padding-right: 15px !important;
+                                    text-align: center !important; 
+                                }
+
+                                /* Encabezado: Número y Título juntos arriba */
+                                .step-header {
+                                    display:flex !important;
+                                    align-items: center !important;
+                                    justify-content: center !important;
+                                    gap: 10px !important;
+                                    margin-bottom: 12px !important;
+                                }
+
+                                /* Circulo azul del número */
+                                .step-number {
+                                    width: 30px !important;
+                                    height: 30px !important;
+                                    background-color: 0b4f8a !important; /* Azul PORSALUD */
+                                    color: #ffff !important;
+                                    border-radius: 50% !important;
+                                    display: flex !important;
+                                    align-items: center !important;
+                                    justify-content: center !important;
+                                    font-weight: bold !important;
+                                    font-size: 0.9rem !important;
+                                    flex-shrink: 0 !important;
+                                }
+
+                                /* Título de cada paso */
+                                .step-header h3 {  
+                               margin: 0 !important;
+                                }
+
+                                /* Texto del párrafo bien centrado */
+                                .card p {
+                                    text-align: center !important;
+                                }
+                                /* Rejilla de 4 columnas horizontales */
+
+/* Rejilla de 4 columnas horizontales con leve desplazamiento a la derecha */
+.grid-pasos {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 16px !important;
+  width: 180% !important;
+  max-width: 1100px !important;
+  margin: 0 auto 0 auto !important; /* Centrado base */ 
+  padding-left: 30px !important
+  margin: 0 auto !important; /* Empuja ligeramiente el bloque a la derecha en 40px */
+}
+
+/* Tarjeta cuadrada con fondo claro suave */
+.paso-card {
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-radius: 18px !important;
+  padding: 24px 16px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03) !important;
+  
+  aspect-ratio: 1 / 1 !important; /* Fuerza formato cuadrado */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Encabezado: Pone el número azul al LADO IZQUIERDO del título */
+.paso-card .step-header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+  width: 100% !important;
+}
+
+/* Círculo azul para el número */
+.paso-card .step-number {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: #0b4f8a !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: bold !important;
+  font-size: 0.9rem !important;
+  flex-shrink: 0 !important;
+}
+
+/* Título al lado del número */
+.paso-card .step-header h3 {
+  margin: 0 !important;
+  font-size: 1.05rem !important;
+  color: #1a2b49 !important;
+  font-weight: 700 !important;
+}
+
+/* Texto centrado debajo */
+.paso-card p {
+  margin: 0 !important;
+  text-align: center !important;
+  font-size: 0.85rem !important;
+  color: #556070 !important;
+  line-height: 1.35 !important;
+}
+                              
+
+                               
+
+
+
+                               
+
+
+
+
